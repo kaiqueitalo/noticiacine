@@ -1,0 +1,130 @@
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: Arial;
+    
+    
+    
+
+}
+
+@font-face {
+    font-family: 'Uni';
+    src: url('Uni Sans Heavy.otf') format('opentype')
+
+}
+
+body {
+    background-color: rgb(0, 217, 255);
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Uni';
+    font-style: normal;
+    font-weight: 900px;
+    size: 60px;
+    line-height: 62px;
+    text-shadow: 0.1em 0.1em rgba(51, 51, 51, 0.534)
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.menu > li > a:hover {
+    color: dodgerblue;
+}
+
+.menu { 
+    display: flex;
+    
+    
+}
+
+.menu > li {
+    margin-left: 15px;
+    Font-family: 'Uni';
+    font-size:  19px;
+}
+
+
+.menu > li > a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.flex {
+    
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.418);
+   
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 5px;
+    border-radius: 5px;
+    }
+
+    .flex > div > p {
+        color: black;
+        font-size: 18px;
+        font-family: 'arial';
+        font-weight: bold;
+        justify-self: auto;
+    }
+
+  
+div > p > a:hover {
+    color: dodgerblue;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;  
+    text-align: center;
+}
+
+.kaique a {
+    color: white;
+}
+
+.kaique a:hover {
+    color: deepskyblue;
+}
