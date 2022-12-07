@@ -19,8 +19,7 @@ body {
     list-style: none;
     font-size: 1.2em;
     font-family: 'Arial';
-    
-    
+
   
 }    
 
@@ -37,6 +36,10 @@ p {
     
 }
 
+.menu{
+    display: flex;
+}
+
 .menu > li > a {
     color: white;
     display: block;
@@ -48,11 +51,25 @@ p {
 h1{
    color: rgb(2, 1, 1); 
 }
+
 section {
     padding-top: 10px;
     background-color: azure;
     text-align: center;
     margin: auto;
+}
+
+.flex {
+    
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.418);
+   
 }
 
 
@@ -66,11 +83,13 @@ section {
                 <li><a href="#">Notícias</a></li>
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Séries</a></li>
+                <li><a href="#">Fale conosco</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <img src="imagens/imagenspg1/a casa do dragrao pag1.png" alt="">
+    <section class="flex">
+
+        <img src="imagens/imagenspg1/a casa do dragrao pag1.png" alt="#" width="100%">
         <h1>A Casa do Dragão: fãs reclamam de episódio escuro demais e HBO responde</h1>
         <p id="cinza">Episódio de Game of Thrones também sofreu das mesmas críticas</p>
         <p>Os fãs de Game of Thrones tiveram um déjà vu nada agradável ao assistirem o sétimo episódio de A Casa do Dragão, isso porque muitos comentaram que as cenas estavam pouco iluminadas, causando dificuldade de enxergar. Essa não é a primeira vez que a franquia recebe essa crítica: a famosa batalha "The Long Night", terceiro episódio da oitava temporada de GoT, também gerou as mesmas reações na época do lançamento. Ambos os episódios foram dirigidos por Miguel Sapochnik
