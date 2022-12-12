@@ -8,19 +8,24 @@
     <title>Home | Notícia Cine</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
 <body> 
 
-<header class="header">
-    <a href="index.html"><img src="imagens/logo.png" width="100" alt=""></a>
-    <nav>
-        <ul class="menu" >
-            <li><a href="#">Notícias</a></li>
+    <header id="header">
+        <a id="logo" href="imagens/"><img src="imagens/logonoticia.png" alt="" width="80px"></img></a> 
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#">Home</a></li>
             <li><a href="#">Filmes</a></li>
             <li><a href="#">Séries</a></li>
-            <li><a href="#">Fale conosco</a></li>
-        </ul>
-    </nav>
-</header>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script src="./script.js"></script>
 
 <!--Fim do cabeçalho-->
 
@@ -69,7 +74,6 @@
 <footer class="kaique">
     <p>Criado por <a href="https://www.instagram.com/kaique_pelestra/" target="_blank"><u>kaique Santos</u></a></p>
 </footer>
-
     
 </body>
 </html>
