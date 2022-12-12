@@ -22,55 +22,6 @@ p > a{
     color: black;
 }
 
-.center{
-    max-width: 960px;
-    padding: 0 2%;
-    margin:0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.menu-desktop ul li {
-    display: inline-block;
-    margin: 0 10px;
-
-}
-
-.menu-desktop ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-.menu-mobile{display: none;text-align: right;width: 50%;}
-
-.menu-mobile svg{
-    cursor: pointer;
-    color: white;
-    font-size: 19px;
-}
-
-
-.show-menu{
-    opacity: 1;
-}
-
-.menu-mobile ul li a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 17px;
-    padding: 8px;
-    display: block;
-}
-
-@media screen and (max-width: 768px) {
-    .menu-mobile{display:block;}
-    .menu-mobile ul{display: none;}
-    .menu-desktop{
-        display: none;
-    }
-}
-
 
 h1 {
     color: white;
@@ -83,16 +34,13 @@ h1 {
     text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.534)
 }
 
-a {
-    
+
+a { 
     color: rgb(253, 253, 253);
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: sans-serif;
 }
-
-
-
 
 
 img {
@@ -112,7 +60,6 @@ img {
     margin-bottom: 80px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.418);
     
-   
 }
 
 .flex > div {
@@ -165,7 +112,6 @@ img:hover{
     cursor: pointer;
   }
 
- 
   
   #header {
     box-sizing: border-box;
