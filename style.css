@@ -3,8 +3,8 @@ body, ul, li, p {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    font-size: 1.2em;
-    font-family: Arial;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 @font-face {
@@ -14,8 +14,98 @@ body, ul, li, p {
 }
 
 body {
-    background-color: rgb(0, 217, 255);
-    
+    background-color: rgb(0, 217, 255);  
+}
+
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+  
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.4rem;
+  
+}
+
+#menu a {
+  display: block;
+  padding: 0.3rem;
+  font-family: 'Uni';
+  font-size: 18px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background-color: rgb(46, 46, 46);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: white;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
 
 p > a{
@@ -25,13 +115,11 @@ p > a{
 
 h1 {
     color: white;
+    padding: 45px;
     text-align: center;
     font-family: 'Uni';
     font-style: normal;
-    font-weight: 900px;
-    size: 60px;
-    line-height: 62px;
-    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.534)
+    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.808)
 }
 
 
@@ -47,6 +135,11 @@ img {
     max-width: 100%;
     display: block;
     border-radius: 5px 5px 5px 5px;
+}
+
+img:hover{
+  transform:scale(1.10,1.10);
+  cursor: pointer;
 }
 
 .flex {
@@ -89,112 +182,217 @@ a:hover {
     color: deepskyblue;
   }
 
-
-footer {
-    
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px;  
-    text-align: center;
-}
-
-.kaique a {
-    color: white;
-}
-
-.kaique a:hover {
-    color: deepskyblue;
-}
-
-img:hover{
-    transform:scale(1.10,1.10);
-    cursor: pointer;
-  }
-
-  
-  #header {
-    box-sizing: border-box;
-    height: 70px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #000000;
+  @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+  * {
+      padding: 0;
+      margin: 0;
   }
   
-  #menu {
-    display: flex;
-    list-style: none;
-    gap: 0.4rem;
+  body {
+      font-family: 'Poppins', sans-serif;
   }
   
-  #menu a {
-    display: block;
-    padding: 0.3rem;
+  html {
+      background-color: #eaf0f2;
   }
   
-  #btn-mobile {
-    display: none;
+  header {
+      text-align: center;
+      padding-top: 100px;
+      margin-bottom: 100px;
+      font-size: 35px;
   }
   
-  @media (max-width: 600px) {
-    #menu {
-      display: block;
-      position: absolute;
+  header h2 {
+      color: #f0525f;
+  }
+  
+  header span {
+      color: #eaa03f;
+  }
+  
+  /* The footer is fixed to the bottom of the page */
+  
+  footer {
+      position: fixed;
+      bottom: 0;
+  }
+  
+  @media (max-height:800px) {
+      footer {
+          position: static;
+      }
+      header {
+          padding-top: 40px;
+      }
+  }
+  
+  .footer-distributed {
+      background-color: #000000;
+      box-sizing: border-box;
       width: 100%;
-      top: 70px;
-      right: 0px;
-      background-color: rgb(46, 46, 46);
-      transition: 0.6s;
-      z-index: 1000;
-      height: 0px;
-      visibility: hidden;
-      overflow-y: hidden;
-    }
-    #nav.active #menu {
-      height: calc(100vh - 70px);
-      visibility: visible;
-      overflow-y: auto;
-    }
-    #menu a {
-      padding: 1rem 0;
-      margin: 0 1rem;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    }
-    #btn-mobile {
-      display: flex;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: none;
-      background: none;
-      cursor: pointer;
-      gap: 0.5rem;
-      color: white;
-    }
-    #hamburger {
-      border-top: 2px solid;
-      width: 20px;
-    }
-    #hamburger::after,
-    #hamburger::before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: currentColor;
-      margin-top: 5px;
-      transition: 0.3s;
-      position: relative;
-    }
-    #nav.active #hamburger {
-      border-top-color: transparent;
-    }
-    #nav.active #hamburger::before {
-      transform: rotate(135deg);
-    }
-    #nav.active #hamburger::after {
-      transform: rotate(-135deg);
-      top: -7px;
-    }
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 50px 50px 60px 50px;
+      margin-top: 80px;
   }
+  
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: inline-block;
+      vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left {
+      width: 30%;
+  }
+  
+  .footer-distributed h3 {
+      color: #ffffff;
+      font: normal 36px 'Cookie', cursive;
+      margin: 0;
+  }
+  
+  
+  .footer-distributed h3 span {
+      color: aqua
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links {
+      color: #ffffff;
+      margin: 20px 0 12px;
+  }
+  
+  .footer-distributed .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  .footer-distributed .footer-company-name {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center {
+      width: 35%;
+  }
+  
+  .footer-distributed .footer-center i {
+      color: white;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope {
+      font-size: 17px;
+      line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p {
+      display: inline-block;
+      color: #ffffff;
+      vertical-align: middle;
+      margin: 0;
+  }
+  
+  .footer-distributed .footer-center p span {
+      display: block;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 2;
+  }
+  
+  .footer-distributed .footer-center p a {
+      color: aqua;
+      text-decoration: none;
+      ;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right {
+      width: 30%;
+  }
+  
+  .footer-distributed .footer-company-about {
+      line-height: 20px;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span {
+      display: block;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons {
+      margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color: #33383b;
+      border-radius: 2px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+  }
+  
+  .footer-distributed .footer-icons a:hover {
+      background-color:deepskyblue
+  }
+  
+  .footer-links a:hover {
+      color: deepskyblue;
+  }
+  
+  @media (max-width: 880px) {
+      .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+      }
+      .footer-distributed .footer-center i {
+          margin-left: 0;
+      }
+  }       
+          
+  
+          
+
+
+
+
+
+
+
+
+
+
