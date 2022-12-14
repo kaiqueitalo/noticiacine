@@ -222,7 +222,7 @@ a:hover {
   }
   
   .footer-distributed {
-      background-color: #000000;
+      background-color: #dd0000;
       box-sizing: border-box;
       text-align: left;
       font: bold 16px sans-serif;
@@ -368,7 +368,7 @@ a:hover {
   @media (max-width: 880px) {
       .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
           display: block;
-          margin-bottom: 40px;
+          width: 100%;
           text-align: center;
       }
       .footer-distributed .footer-center i {
