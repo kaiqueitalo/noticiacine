@@ -224,7 +224,7 @@ a:hover {
   .footer-distributed {
       background-color: #dd0000;
       box-sizing: border-box;
-      text-align: left;
+      text-align: center;
       font: bold 16px sans-serif;
       padding: 50px 50px 60px 50px;
       margin-top: 80px;
@@ -365,7 +365,7 @@ a:hover {
       color: deepskyblue;
   }
   
-  @media (max-width: 880px) {
+  @media (max-width: 800px) {
       .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
           display: block;
           width: 100%;
