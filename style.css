@@ -198,8 +198,6 @@ a:hover {
   
   header {
     text-align: center;
-    padding-top: 100px;
-    margin-bottom: 300px;
     font-size: 35px;
 }
   
@@ -228,7 +226,7 @@ a:hover {
   }
   
   .footer-distributed {
-      background-color: #dd0000;
+      background-color: #000000;
       box-sizing: border-box;
       width: 100%;
       text-align: left;
