@@ -122,8 +122,15 @@ body {
 }    
 
 
+#cinza {
+  font-size: 17px;
+  color: dimgray;
+}
+
+
 h1{
    color: rgb(2, 1, 1); 
+   font-size: 35px;
 }
 
 section {
@@ -161,9 +168,9 @@ section p {
 
 .twi{
     border-radius: 5px 5px 5px 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.075);
-    padding-bottom: 30px;
+    padding-bottom: 2px;
     max-width: 90%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.11);
     
 }
 
